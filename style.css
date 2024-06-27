@@ -1,0 +1,60 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 20px;
+    background-color: #f5f5f5;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background: linear-gradient(to bottom, #ffffff, #f9f9f9);
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+th, td {
+    padding: 12px;
+    text-align: center;
+    font-size: 14px;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+th {
+    background-color: #3498db;
+    color: #fff;
+    padding: 15px;
+}
+tbody tr {
+    cursor: pointer;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+tbody tr:hover {
+    background-color: #45a049;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+tbody tr:hover img {
+    transform: scale(1.2);
+}
+tbody tr:hover td1.title {
+    transform: scale(1.2);
+    color: #45a049; 
+}
+tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+tbody tr:nth-child(odd) {
+    background-color: #f5f5f5;
+}
+@media only screen and (max-width: 600px) {
+    table {
+        width: 100%;
+    }
+    th, td {
+        display: block;
+        width: 100%;
+        box-sizing: border-box;
+        text-align: left;
+    }
+}
+tbody tr td1.title {
+    transition: transform 0.3s, color 0.3s;
+}
